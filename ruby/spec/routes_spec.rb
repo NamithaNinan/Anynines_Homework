@@ -52,7 +52,6 @@ describe ArticleRoutes do
     it 'checks response status and body' do
       expect(response.status).to eq 200
       hashed_response = JSON.parse(response.body)
-      expect(hashed_response).to have_key('article')
       expect(hashed_response['article']).to be_truthy
     end
   end
