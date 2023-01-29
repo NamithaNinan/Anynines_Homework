@@ -1,5 +1,4 @@
 require 'active_record'
-puts "#{ENV['DB_NAME']} #{ENV['DB_HOST']} #{ENV['DB_USER']} #{ENV['DB_PASS']}"
 DB = ActiveRecord::Base.establish_connection(
   :adapter => 'postgresql',
   :database => ENV['DB_NAME'],
